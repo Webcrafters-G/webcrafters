@@ -23,3 +23,34 @@ function setupMenu() {
     });
   }
 }
+
+let slideIndex = 1;
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  const slides = document.querySelectorAll(".portfolio-slide");
+  const dots = document.querySelectorAll(".dot");
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  slides.forEach(slide => {
+    slide.style.display = "none";
+  });
+
+  dots.forEach(dot => {
+    dot.classList.remove("bg-primary");
+    dot.classList.add("bg-gray-400");
+  });
+
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].classList.remove("bg-gray-400");
+  dots[slideIndex - 1].classList.add("bg-primary");
+}
+
+setInterval(() => {
+  plusDivs(1);
+}, 4000);

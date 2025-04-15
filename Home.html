@@ -74,6 +74,66 @@
       cepat, dan responsif di berbagai perangkat. Kami siap membantu
       mewujudkannya! 🚀
     </p>
+
+    <div class="relative overflow-hidden max-w-6xl mx-auto px-4 md:px-8">
+      <div id="carousel-slides" class="flex transition-transform">
+        <!-- Slide 1 -->
+        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+          <img src="assets/6.italian_resto.jpg" alt="Italian Restaurant"
+            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+          <div class="text-left md:w-1/2">
+            <h3 class="text-xl font-semibold mb-2">Italian Restaurant</h3>
+            <p class="text-base text-gray-700">
+              Website modern yang menghadirkan pengalaman kuliner autentik, reservasi online yang cepat juga
+              integrasi pemesanan takeaway & delivery.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+          <img src="assets/7.meal_plans.jpg" alt="Meal Plan"
+            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+          <div class="text-left md:w-1/2">
+            <h3 class="text-xl font-semibold mb-2">Meal Plan</h3>
+            <p class="text-base text-gray-700">
+              Website yang dirancang untuk memudahkan pelanggan menikmati pola makan sehat dengan
+              penghitungan kalori & rekomendasi menu personalisasi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+          <img src="assets/8.dessert.jpg" alt="Sweet Delights"
+            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+          <div class="text-left md:w-1/2">
+            <h3 class="text-xl font-semibold mb-2">Sweet Delights</h3>
+            <p class="text-base text-gray-700">
+              Website elegan untuk toko dessert yang menghadirkan aneka kue dan hidangan manis dengan sistem pemesanan
+              online yang praktis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigasi -->
+      <button onclick="plusDivs(-1)"
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
+        &#10094;
+      </button>
+      <button onclick="plusDivs(1)"
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
+        &#10095;
+      </button>
+
+      <!-- Dots -->
+      <div class="flex justify-center mt-10 space-x-2">
+        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(1)"></span>
+        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(2)"></span>
+        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
   </section>
 
   <div id="footer-container"></div>
