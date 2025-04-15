@@ -6,12 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="overflow-x-hidden">
+    <header class="font-poppins bg-white shadow-md h-20 items-center flex w-screen z-50 fixed top-0 left-0">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-blue-600">WEBCRAFTERS</h1>
+
+            <!-- Hamburger button -->
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <nav class="hidden md:block ml-auto">
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="Home.html" class="block py-2 font-bold hover:text-blue-600 transition">Home</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html" class="block py-2 font-bold hover:text-blue-600 transition">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Dropdown -->
+        <nav>
+            <ul id="nav-menu"
+                class="hidden md:hidden flex-col space-y-2 px-4 py-4 bg-white absolute top-full left-0 w-full shadow-md z-40">
+                <li>
+                    <a href="Home.html" class="block py-2 font-bold hover:text-blue-600 transition">Home</a>
+                </li>
+                <li>
+                    <a href="Contact.html" class="block py-2 font-bold hover:text-blue-600 transition">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- hero section -->
+    <div class="h-[70vh] mt-10 bg-primary w-screen items-center flex justify-center font-poppins">
+        <div class="text-center w-[80vh] text-white space-y-7">
+            <p class="text-5xl text-white ">Contact Us</p>
+            <p class="text-2xl"> Butuh Website Profesional? WebCrafters siap mewujudkannya. Hubungi kami sekarang dan
+                dapatkan
+                konsultasi gratis!</p>
+            <button
+                class="bg-white text-secondary text-xl hover:scale-105 transition-all duration-400 rounded-md px-10 py-4">Get
+                Started</button>
+        </div>
+    </div>
+
+    <div class="font-poppins justify-center  w-screen flex flex-col mt-10 overflow-hidden">
+        <div class="text-center space-y-2">
+            <p class="text-4xl">
+                Message Us
+            </p>
+            <p class="text-xl text-gray-600">We'll get back to you within 24 hours</p>
+
+        </div>
+        <div class="ml-10 mr-10 space-x-6 flex h-[40vh] mt-20   ">
+            <form class="w-2/3 flex space-x-6 " action="#">
+                <div class="flex flex-col gap-14 px-10   w-1/2">
+                    <input class="outline-none border-1  px-5 py-4 border-gray-400 rounded-sm" type="text"
+                        placeholder="Name*">
+                    <input class="outline-none border-1 px-5 py-4 border-gray-400 rounded-sm" placeholder="Email*"
+                        type="text">
+                    <input class="outline-none border-1 px-5 py-4 border-gray-400 rounded-sm" placeholder="Phone*"
+                        type="text">
+
+                    <button class="px-4 py-3 w-32 rounded-sm bg-primary text-white">Submit</button>
+
+                </div>
+
+                <textarea class="w-1/2 px-5 h-full outline-none border-1 rounded-md border-gray-400" name="" id="">
+
+                </textarea>
+            </form>
+
+            <div class="w-1/3">
+                <img class="px-10 pr-20" src="./assets/kontak.png" alt="">
+            </div>
+        </div>
+
+        <div class="h-[50vh]">
+
+        </div>
+
+    </div>
+
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-primary {
+    background-color: #3366ff;
+}
+
+.bg-secondary {
+    background-color: #142C9F;
+}
+
+.text-primary {
+    color: #3366ff;
+}
+
+.text-secondary {
+    color: #142C9F;
+}
