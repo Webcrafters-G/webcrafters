@@ -7,27 +7,14 @@
   <title>Home</title>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    .font-poppins {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .bg-primary {
-      background-color: #3366ff;
-    }
-
-    .bg-secondary {
-      background-color: #142C9F;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins overflow-x-hidden">
   <div id="header-container"></div>
 
   <!-- Layanan Section -->
-  <section id="layanan" class="py-16 px-4 text-center">
+  <section id="layanan" class="mt-20 py-16 px-4 text-center">
     <h1 class="text-2xl md:text-4xl font-bold mb-4">
       Solusi Praktis untuk Membuat Website dengan Mudah!
     </h1>
@@ -40,12 +27,12 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <!-- Card 1 -->
       <div
-        class="rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        class="rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
         <img src="assets/layanan/3.jpg" alt="Company Profile" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Company Profile</h3>
           <p class="text-lg font-bold mb-4">Mulai Rp. 159.000</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-xl hover:opacity-50 transition duration-300">
+          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
             Pesan sekarang
           </button>
         </div>
@@ -53,12 +40,12 @@
 
       <!-- Card 2 -->
       <div
-        class="rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        class="rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
         <img src="assets/layanan/2.jpg" alt="Online Shop" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">Online Shop</h3>
           <p class="text-lg font-bold mb-4">Mulai Rp. 139.000</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-xl hover:opacity-50 transition duration-300">
+          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
             Pesan sekarang
           </button>
         </div>
@@ -66,12 +53,12 @@
 
       <!-- Card 3 -->
       <div
-        class="rounded-2xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        class="rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
         <img src="assets/layanan/1.jpg" alt="UI/UX Design" class="w-full h-64 object-cover" />
         <div class="p-6">
           <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
           <p class="text-lg font-bold mb-4">Mulai Rp. 59.900</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-xl hover:opacity-50 transition duration-300">
+          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
             Pesan sekarang
           </button>
         </div>
@@ -80,7 +67,7 @@
   </section>
 
   <!-- Portofolio Section -->
-  <section id="portofolio" class="py-16 px-4 bg-gray-50 text-center">
+  <section id="portofolio" class="mt-10 py-16 px-4 bg-gray-50 text-center">
     <h1 class="text-2xl md:text-4xl font-bold mb-4">Portofolio</h1>
     <p class="text-lg mb-10 max-w-4xl mx-auto">
       Kami merancang website yang tak hanya menarik, tetapi juga user-friendly,
