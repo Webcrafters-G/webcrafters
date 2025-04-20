@@ -1,294 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body class="font-poppins overflow-x-hidden">
+    <div id="header-container"></div>
 
-<body class="font-poppins overflow-x-hidden">
-  <div id="header-container"></div>
-
-  <!--Hero Section -->
-  <section id="hero" class="bg-[#3366ff] gap-2 mt-[4rem] px-[3rem] py-[6rem] flex">
-    <div class="!w-full items-center text-center gap-y-[1rem] lg:w-1/2 text-white flex flex-col items-center justify-around gap-y-2">
-      <h1 class="lg:text-start w-full font-bold text-4xl">
-        Jasa Pembuatan Website Profesional
-      </h1>
-      <p class="lg:text-start">
-        Dapatkan kemudahan dalam membuat website
-        sesuai yang kamu inginkan dengan Jasa
-        Pembuatan Website di WebCrafters !
-      </p>
-      <img src="./assets/hero.png" class="lg:w-full lg:h-[20rem] lg:hidden" />
-      <button class="p-[1rem] mt-[20px] rounded-[15px] cursor-pointer border border-solid border-transparent text-[#3366ff] bg-white font-bold lg:self-start hover:drop-shadow-[0_5px_10px_black]">
-        Hubungi kami
-      </button>
-    </div>
-    <div class="!w-full items-center text-center gap-y-[1rem] hidden lg:block">
-      <img src="./assets/hero.png" class="w-[30rem] h-[20rem]"/>
-    </div>
-  </section>
-
-  <!-- Layanan Section -->
-  <section id="layanan" class="mt-10 py-16 px-4 text-center">
-    <h1 class="text-2xl md:text-4xl font-bold mb-4">
-      Solusi Praktis untuk Membuat Website dengan Mudah!
-    </h1>
-    <p class="text-lg mb-10 max-w-4xl mx-auto">
-      Kamu nggak perlu ribet sama proses pembuatannya! Kami siap menjadikan
-      websitemu online dalam 3 hari. Dapatkan harga terbaik se-Indonesia, mulai
-      dari <span class="font-bold">Rp59.900/bulan.</span>
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-      <!-- Card 1 -->
+    <!--Hero Section -->
+    <section
+      id="hero"
+      class="bg-[#3366ff] gap-2 mt-[4rem] px-[3rem] py-[6rem] flex">
       <div
-        class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="assets/layanan/3.jpg" alt="Company Profile" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Company Profile</h3>
-          <p class="text-lg font-bold mb-4">Mulai Rp. 159.000</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
-            Pesan sekarang
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div
-        class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="assets/layanan/2.jpg" alt="Online Shop" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Online Shop</h3>
-          <p class="text-lg font-bold mb-4">Mulai Rp. 139.000</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
-            Pesan sekarang
-          </button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div
-        class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-        <img src="assets/layanan/1.jpg" alt="UI/UX Design" class="w-full h-64 object-cover" />
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
-          <p class="text-lg font-bold mb-4">Mulai Rp. 59.900</p>
-          <button class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
-            Pesan sekarang
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portofolio Section -->
-  <section id="portofolio" class="py-16 px-4 bg-gray-50 text-center">
-    <h1 class="text-2xl md:text-4xl font-bold mb-4">Portofolio</h1>
-    <p class="text-lg mb-10 max-w-4xl mx-auto">
-      Kami merancang website yang tak hanya menarik, tetapi juga user-friendly,
-      cepat, dan responsif di berbagai perangkat. Kami siap membantu
-      mewujudkannya! 🚀
-    </p>
-
-    <div class="relative overflow-hidden max-w-6xl mx-auto px-4 md:px-8">
-      <div id="carousel-slides" class="flex transition-transform">
-        <!-- Slide 1 -->
-        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
-          <img src="assets/6.italian_resto.jpg" alt="Italian Restaurant"
-            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
-          <div class="text-left md:w-1/2">
-            <h3 class="text-xl font-semibold mb-2">Italian Restaurant</h3>
-            <p class="text-base text-gray-700">
-              Website modern yang menghadirkan pengalaman kuliner autentik, reservasi online yang cepat juga
-              integrasi pemesanan takeaway & delivery.
-            </p>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
-          <img src="assets/7.meal_plans.jpg" alt="Meal Plan"
-            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
-          <div class="text-left md:w-1/2">
-            <h3 class="text-xl font-semibold mb-2">Meal Plan</h3>
-            <p class="text-base text-gray-700">
-              Website yang dirancang untuk memudahkan pelanggan menikmati pola makan sehat dengan
-              penghitungan kalori & rekomendasi menu personalisasi.
-            </p>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
-          <img src="assets/8.dessert.jpg" alt="Sweet Delights"
-            class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
-          <div class="text-left md:w-1/2">
-            <h3 class="text-xl font-semibold mb-2">Sweet Delights</h3>
-            <p class="text-base text-gray-700">
-              Website elegan untuk toko dessert yang menghadirkan aneka kue dan hidangan manis dengan sistem pemesanan
-              online yang praktis.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigasi -->
-      <button onclick="plusDivs(-1)"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
-        &#10094;
-      </button>
-      <button onclick="plusDivs(1)"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
-        &#10095;
-      </button>
-
-      <!-- Dots -->
-      <div class="flex justify-center mt-10 space-x-2">
-        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(1)"></span>
-        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(2)"></span>
-        <span class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer" onclick="currentDiv(3)"></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="py-12 px-6 sm:px-12 flex justify-center w-full bg-white text-white">
-    <div class="max-w-[1275px] w-full bg-secondary rounded-2xl p-10 sm:p-12">
-      <div class="flex flex-col items-center text-center gap-3 mb-10">
-        <div class="flex flex-col sm:flex-row items-center gap-2">
-          <img src="assets/faq/faq.svg" alt="" class="w-10 sm:w-auto" />
-          <h1 class="text-2xl sm:text-3xl font-semibold">Frequently Asked Questions (FAQs)</h1>
-        </div>
-        <p class="text-base sm:text-lg font-light max-w-2xl">
-          Stuck on something? We're here to help with all your questions and answers.
+        class="!w-full items-center text-center gap-y-[1rem] lg:w-1/2 text-white flex flex-col items-center justify-around gap-y-2">
+        <h1 class="lg:text-start w-full font-bold text-4xl">
+          Jasa Pembuatan Website Profesional
+        </h1>
+        <p class="lg:text-start">
+          Dapatkan kemudahan dalam membuat website sesuai yang kamu inginkan
+          dengan Jasa Pembuatan Website di WebCrafters !
         </p>
+        <img src="./assets/hero.png" class="lg:w-full lg:h-[20rem] lg:hidden" />
+        <button
+          class="p-[1rem] mt-[20px] rounded-[15px] cursor-pointer border border-solid border-transparent text-[#3366ff] bg-white font-bold lg:self-start hover:drop-shadow-[0_5px_10px_black]">
+          Hubungi kami
+        </button>
       </div>
-  
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
-        <div class="flex flex-col gap-6">
-          <!-- FAQ Item 1 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_1.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apa saja layanan yang ditawarkan?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Kami menawarkan layanan pembuatan website profesional, termasuk website bisnis, e-commerce, landing page, blog, dan sistem berbasis web sesuai kebutuhan klien.              </p>
-            </div>
+      <div
+        class="!w-full items-center text-center gap-y-[1rem] hidden lg:block">
+        <img src="./assets/hero.png" class="w-[30rem] h-[20rem]" />
+      </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="layanan" class="mt-10 py-16 px-4 text-center">
+      <h1 class="text-2xl md:text-4xl font-bold mb-4">
+        Solusi Praktis untuk Membuat Website dengan Mudah!
+      </h1>
+      <p class="text-lg mb-10 max-w-4xl mx-auto">
+        Kamu nggak perlu ribet sama proses pembuatannya! Kami siap menjadikan
+        websitemu online dalam 3 hari. Dapatkan harga terbaik se-Indonesia,
+        mulai dari <span class="font-bold">Rp59.900/bulan.</span>
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Card 1 -->
+        <div
+          class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+          <img
+            src="assets/layanan/3.jpg"
+            alt="Company Profile"
+            class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Company Profile</h3>
+            <p class="text-lg font-bold mb-4">Mulai Rp. 159.000</p>
+            <button
+              class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
+              Pesan sekarang
+            </button>
           </div>
-  
-          <!-- FAQ Item 2 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_2.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Berapa lama proses pembuatan website?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Lama pengerjaan tergantung pada kompleksitas proyek. Secara umum, pembuatan website standar memakan waktu sekitar 7-14 hari kerja, sementara proyek yang lebih kompleks bisa memakan waktu lebih lama.
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+          <img
+            src="assets/layanan/2.jpg"
+            alt="Online Shop"
+            class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Online Shop</h3>
+            <p class="text-lg font-bold mb-4">Mulai Rp. 139.000</p>
+            <button
+              class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
+              Pesan sekarang
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="rounded-xl cursor-pointer shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
+          <img
+            src="assets/layanan/1.jpg"
+            alt="UI/UX Design"
+            class="w-full h-64 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+            <p class="text-lg font-bold mb-4">Mulai Rp. 59.900</p>
+            <button
+              class="bg-primary text-white py-3 px-6 rounded-md hover:opacity-50 transition duration-300">
+              Pesan sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofolio Section -->
+    <section id="portofolio" class="py-16 px-4 bg-gray-50 text-center">
+      <h1 class="text-2xl md:text-4xl font-bold mb-4">Portofolio</h1>
+      <p class="text-lg mb-10 max-w-4xl mx-auto">
+        Kami merancang website yang tak hanya menarik, tetapi juga
+        user-friendly, cepat, dan responsif di berbagai perangkat. Kami siap
+        membantu mewujudkannya! 🚀
+      </p>
+
+      <div class="relative overflow-hidden max-w-6xl mx-auto px-4 md:px-8">
+        <div id="carousel-slides" class="flex transition-transform">
+          <!-- Slide 1 -->
+          <div
+            class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+            <img
+              src="assets/6.italian_resto.jpg"
+              alt="Italian Restaurant"
+              class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+            <div class="text-left md:w-1/2">
+              <h3 class="text-xl font-semibold mb-2">Italian Restaurant</h3>
+              <p class="text-base text-gray-700">
+                Website modern yang menghadirkan pengalaman kuliner autentik,
+                reservasi online yang cepat juga integrasi pemesanan takeaway &
+                delivery.
               </p>
             </div>
           </div>
-  
-          <!-- FAQ Item 3 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_3.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah website sudah dilengkapi dengan SEO?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Kami mengoptimalkan website dengan teknik SEO dasar, seperti kecepatan loading, struktur URL yang ramah mesin pencari, dan optimasi meta tag. Untuk SEO lebih lanjut, kami juga menawarkan layanan tambahan.
+
+          <!-- Slide 2 -->
+          <div
+            class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+            <img
+              src="assets/7.meal_plans.jpg"
+              alt="Meal Plan"
+              class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+            <div class="text-left md:w-1/2">
+              <h3 class="text-xl font-semibold mb-2">Meal Plan</h3>
+              <p class="text-base text-gray-700">
+                Website yang dirancang untuk memudahkan pelanggan menikmati pola
+                makan sehat dengan penghitungan kalori & rekomendasi menu
+                personalisasi.
               </p>
             </div>
           </div>
-  
-          <!-- FAQ Item 4 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_4.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah saya bisa mengelola website sendiri?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Ya! Kami menyediakan dashboard admin yang mudah digunakan, serta memberikan pelatihan atau panduan untuk membantu Anda mengelola website dengan mudah.
-              </p>
-            </div>
-          </div>
-  
-          <!-- FAQ Item 5 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_5.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah website sudah mobile-friendly?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Ya, semua website yang kami buat responsif dan mobile-friendly, sehingga dapat diakses dengan baik di berbagai perangkat, termasuk smartphone dan tablet.
+
+          <!-- Slide 3 -->
+          <div
+            class="portfolio-slide min-w-full flex flex-col md:flex-row items-center gap-6 px-4">
+            <img
+              src="assets/8.dessert.jpg"
+              alt="Sweet Delights"
+              class="w-full md:w-1/2 rounded-xl shadow-md object-cover h-64 md:h-80" />
+            <div class="text-left md:w-1/2">
+              <h3 class="text-xl font-semibold mb-2">Sweet Delights</h3>
+              <p class="text-base text-gray-700">
+                Website elegan untuk toko dessert yang menghadirkan aneka kue
+                dan hidangan manis dengan sistem pemesanan online yang praktis.
               </p>
             </div>
           </div>
         </div>
-  
-        <div class="flex flex-col gap-6">
-          <!-- FAQ Item 6 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_6.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah saya bisa meminta desain khusus?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Tentu! Kami menyediakan layanan desain custom yang sesuai dengan brand dan preferensi Anda. Tim kami akan bekerja sama dengan Anda untuk menciptakan desain yang unik dan profesional.
-              </p>
+
+        <!-- Navigasi -->
+        <button
+          onclick="plusDivs(-1)"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
+          &#10094;
+        </button>
+        <button
+          onclick="plusDivs(1)"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-300 text-white p-2 rounded-full hover:bg-blue-500">
+          &#10095;
+        </button>
+
+        <!-- Dots -->
+        <div class="flex justify-center mt-10 space-x-2">
+          <span
+            class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer"
+            onclick="currentDiv(1)"></span>
+          <span
+            class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer"
+            onclick="currentDiv(2)"></span>
+          <span
+            class="dot w-9 h-1 bg-gray-400 rounded-full cursor-pointer"
+            onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section id="testimoni">
+      <div class="max-w-6xl mx-auto p-8">
+        <h2 class="text-3xl font-bold text-center mb-16">
+          Our Trusted
+          <span class="px-8 bg-blue-700 rounded-sm text-white">Client</span>
+          <p class="pt-2 mx-auto text-base text-gray-700">
+            Our mission is to drive progress and enhance the lines of our
+            customers by delivering superior product and services that exceed
+            expectations.
+          </p>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-blue-700 text-xl font-bold">⭐ 4.9</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Pengalaman bekerja dengan WebCrafters luar biasa! Website kami
+              kini lebih menarik dan user-friendly, berkat kerja keras mereka."
+            </p>
+            <div class="flex items-center">
+              <img
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                src="/assets/testi/potoprofil3.webp"
+                alt="" />
+              <p class="font-semibold">Kate Davis</p>
             </div>
           </div>
-  
-          <!-- FAQ Item 7 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_7.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Berapa biaya pembuatan website?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Biaya tergantung pada fitur dan spesifikasi yang dibutuhkan. Silakan hubungi kami untuk mendapatkan penawaran harga yang sesuai dengan kebutuhan Anda.
-              </p>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-blue-700 text-xl font-bold">⭐ 4.9</span>
+            </div>
+            <p class="text-gray-600 mb-4">
+              "Layanan pembuatan situs dari WebCrafters sangat memuaskan!
+              Desainnya profesional dan sesuai dengan kebutuhan bisnis kami."
+            </p>
+            <div class="flex items-center">
+              <img
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                src="/assets/testi/potoprofil1.webp"
+                alt="" />
+              <p class="font-semibold">Abdul Aziz</p>
             </div>
           </div>
-  
-          <!-- FAQ Item 8 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_8.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah website saya akan aman?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Keamanan adalah prioritas kami. Kami menerapkan protokol keamanan seperti SSL Certificate, firewall, dan backup berkala untuk menjaga data Anda tetap aman.
-              </p>
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-blue-700 text-xl font-bold">⭐ 4.9</span>
             </div>
-          </div>
-  
-          <!-- FAQ Item 9 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_9.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Apakah ada layanan maintenance?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Tentu! Kami menyediakan layanan desain custom yang sesuai dengan brand dan preferensi Anda. Tim kami akan bekerja sama dengan Anda untuk menciptakan desain yang unik dan profesional.
-              </p>
-            </div>
-          </div>
-  
-          <!-- FAQ Item 10 -->
-          <div class="flex-column sm:flex gap-3">
-            <img src="assets/faq/faq_10.svg" alt="" class="w-10 h-10" />
-            <div class="flex flex-col gap-2">
-              <h3 class="text-lg font-semibold">Bagaimana cara memesan layanan?</h3>
-              <p class="text-sm md:text-base font-light opacity-85 text-justify">
-                Anda dapat menghubungi kami melalui formulir kontak, WhatsApp, atau email. Tim kami akan segera merespons dan membantu Anda memulai proyek website impian Anda!
-              </p>
+            <p class="text-gray-600 mb-4">
+              "Kami sangat terbantu dengan tim WebCrafters. Mereka cepat tanggap
+              dan selalu siap memberikan solusi terbaik untuk website kami."
+            </p>
+            <div class="flex items-center">
+              <img
+                class="w-12 h-12 rounded-full object-cover mr-4"
+                src="/assets/testi/potoprofil2.webp"
+                alt="" />
+              <p class="font-semibold">Perry Aston</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>  
+    </section>
 
-  <div id="footer-container"></div>
-  <script src="script.js"></script>
-</body>
+    <!-- FAQ Section -->
+    <section
+      class="py-12 px-6 sm:px-12 flex justify-center w-full bg-white text-white">
+      <div class="max-w-[1275px] w-full bg-secondary rounded-2xl p-10 sm:p-12">
+        <div class="flex flex-col items-center text-center gap-3 mb-10">
+          <div class="flex flex-col sm:flex-row items-center gap-2">
+            <img src="assets/faq/faq.svg" alt="" class="w-10 sm:w-auto" />
+            <h1 class="text-2xl sm:text-3xl font-semibold">
+              Frequently Asked Questions (FAQs)
+            </h1>
+          </div>
+          <p class="text-base sm:text-lg font-light max-w-2xl">
+            Stuck on something? We're here to help with all your questions and
+            answers.
+          </p>
+        </div>
 
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16">
+          <div class="flex flex-col gap-6">
+            <!-- FAQ Item 1 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_1.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apa saja layanan yang ditawarkan?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Kami menawarkan layanan pembuatan website profesional,
+                  termasuk website bisnis, e-commerce, landing page, blog, dan
+                  sistem berbasis web sesuai kebutuhan klien.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_2.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Berapa lama proses pembuatan website?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Lama pengerjaan tergantung pada kompleksitas proyek. Secara
+                  umum, pembuatan website standar memakan waktu sekitar 7-14
+                  hari kerja, sementara proyek yang lebih kompleks bisa memakan
+                  waktu lebih lama.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_3.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah website sudah dilengkapi dengan SEO?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Kami mengoptimalkan website dengan teknik SEO dasar, seperti
+                  kecepatan loading, struktur URL yang ramah mesin pencari, dan
+                  optimasi meta tag. Untuk SEO lebih lanjut, kami juga
+                  menawarkan layanan tambahan.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_4.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah saya bisa mengelola website sendiri?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Ya! Kami menyediakan dashboard admin yang mudah digunakan,
+                  serta memberikan pelatihan atau panduan untuk membantu Anda
+                  mengelola website dengan mudah.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_5.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah website sudah mobile-friendly?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Ya, semua website yang kami buat responsif dan
+                  mobile-friendly, sehingga dapat diakses dengan baik di
+                  berbagai perangkat, termasuk smartphone dan tablet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <!-- FAQ Item 6 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_6.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah saya bisa meminta desain khusus?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Tentu! Kami menyediakan layanan desain custom yang sesuai
+                  dengan brand dan preferensi Anda. Tim kami akan bekerja sama
+                  dengan Anda untuk menciptakan desain yang unik dan
+                  profesional.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_7.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Berapa biaya pembuatan website?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Biaya tergantung pada fitur dan spesifikasi yang dibutuhkan.
+                  Silakan hubungi kami untuk mendapatkan penawaran harga yang
+                  sesuai dengan kebutuhan Anda.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 8 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_8.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah website saya akan aman?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Keamanan adalah prioritas kami. Kami menerapkan protokol
+                  keamanan seperti SSL Certificate, firewall, dan backup berkala
+                  untuk menjaga data Anda tetap aman.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 9 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_9.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Apakah ada layanan maintenance?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Tentu! Kami menyediakan layanan desain custom yang sesuai
+                  dengan brand dan preferensi Anda. Tim kami akan bekerja sama
+                  dengan Anda untuk menciptakan desain yang unik dan
+                  profesional.
+                </p>
+              </div>
+            </div>
+
+            <!-- FAQ Item 10 -->
+            <div class="flex-column sm:flex gap-3">
+              <img src="assets/faq/faq_10.svg" alt="" class="w-10 h-10" />
+              <div class="flex flex-col gap-2">
+                <h3 class="text-lg font-semibold">
+                  Bagaimana cara memesan layanan?
+                </h3>
+                <p
+                  class="text-sm md:text-base font-light opacity-85 text-justify">
+                  Anda dapat menghubungi kami melalui formulir kontak, WhatsApp,
+                  atau email. Tim kami akan segera merespons dan membantu Anda
+                  memulai proyek website impian Anda!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-container"></div>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
 
 .font-poppins {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .bg-primary {
-    background-color: #3366ff;
+  background-color: #3366ff;
 }
 
 .bg-secondary {
-    background-color: #142C9F;
+  background-color: #142c9f;
 }
 
 .text-primary {
-    color: #3366ff;
+  color: #3366ff;
 }
 
 .text-secondary {
-    color: #142C9F;
+  color: #142c9f;
 }
