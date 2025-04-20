@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -51,19 +52,66 @@
 
 
     <!-- hero section -->
-    <div class="h-[70vh] mt-10 bg-primary w-screen items-center flex justify-center font-poppins">
+    <div class="h-[70vh] mt-10 bg-primary w-screen items-center flex justify-center font-poppins relative">
         <div class="text-center w-[80vh] text-white space-y-7">
             <p class="text-5xl text-white ">Contact Us</p>
-            <p class="text-2xl"> Butuh Website Profesional? WebCrafters siap mewujudkannya. Hubungi kami sekarang dan
-                dapatkan
-                konsultasi gratis!</p>
+            <p class="text-sm md:text-2xl"> Butuh Website Profesional? WebCrafters siap mewujudkannya. Hubungi kami
+                sekarang dan dapatkan konsultasi gratis!</p>
+
             <button
                 class="bg-white text-secondary text-xl hover:scale-105 transition-all duration-400 rounded-md px-10 py-4">Get
                 Started</button>
         </div>
+
+        <div class="absolute -bottom-10 flex space-x-22">
+            <div
+                class="px-10  py-7 bg-white flex space-x-2 items-center border-1 border-gray-400 shadow-md transition-all duration-700 rounded-md hover:scale-105 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                </svg>
+
+                <div>
+                    <p>Call Us</p>
+                    <p>+62 85367636253</p>
+                </div>
+
+            </div>
+            <div
+                class="px-10 w-72  py-7 bg-white flex space-x-2 items-center border-1 border-gray-400 shadow-md transition-all duration-700 rounded-md hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                </svg>
+
+                <div>
+                    <p>Call Us</p>
+                    <p>+62 85367636253</p>
+                </div>
+
+            </div>
+            <div
+                class="px-7 w-72 py-7 bg-white flex space-x-2 items-center border-1 border-gray-400 shadow-md transition-all duration-700 rounded-md hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+
+
+                <div>
+                    <p>Gmail</p>
+                    <p>WebCrafters@outlook.com</p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
-    <div class="font-poppins justify-center  w-screen flex flex-col mt-10 overflow-hidden">
+    <div class="font-poppins justify-center  w-screen flex flex-col mt-24 overflow-hidden">
         <div class="text-center space-y-2">
             <p class="text-4xl">
                 Message Us
@@ -81,7 +129,8 @@
                     <input class="outline-none border-1 px-5 py-4 border-gray-400 rounded-sm" placeholder="Phone*"
                         type="text">
 
-                    <button class="px-4 py-3 w-32 rounded-sm bg-primary text-white">Submit</button>
+                    <button
+                        class="px-4 py-3 w-32 hover:scale-105 shadow-md transition-all duration-700 rounded-sm bg-primary text-white">Submit</button>
 
                 </div>
 
@@ -95,9 +144,66 @@
             </div>
         </div>
 
-        <div class="h-[50vh]">
+        <div class="h-[20vh]">
 
         </div>
+
+        <footer class="bg-secondary h-[70vh] pl-16 w-screen">
+            <div class="flex justify-between pr-20 pt-24">
+                <div class="w-100 text-center text-white items-center flex flex-col">
+                    <img class="h-30 w-80" src="./assets/logo_putih.png" alt="">
+                    <p class="text-lg -mt-7">JASA PEMBUATAN WEBSITE</p>
+                </div>
+
+                <iframe class="h-80 rounded-xl"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217319.08147426826!2d100.19291437064277!3d-1.1026348172004767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4a89d41dbc1a5%3A0x46bb90e909b7d945!2sKoto%20XI%20Tarusan%2C%20Kabupaten%20Pesisir%20Selatan%2C%20Sumatera%20Barat!5e1!3m2!1sid!2sid!4v1745163352911!5m2!1sid!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+
+            <div class="pl-20 mt-10 flex space-x-30">
+                <div class="text-white">
+                    <p class="text-3xl font-bold">
+                        Ikuti Kami
+                    </p>
+                    <div class="flex space-x-4 mt-8">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>webcrafters@gmail.com</p>
+                    </div>
+                    <div class="flex space-x-4 mt-2">
+                        <i class="fab fa-facebook"></i>
+                        <p>webcrafters</p>
+                    </div>
+                    <div class="flex space-x-4 mt-2">
+                        <i class="fab fa-instagram"></i>
+                        <p>@webcrafters</p>
+                    </div>
+
+                </div>
+                <div class="text-white">
+                    <p class="text-3xl font-bold">
+                        Contact
+                    </p>
+                    <div class="flex space-x-4 mt-8">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>webcrafters@gmail.com</p>
+                    </div>
+                    <div class="flex space-x-4 mt-2">
+                        <i class="fas fa-phone"></i>
+                        <p>+62 8213457383</p>
+                    </div>
+                    <div class="flex space-x-4 mt-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Perintis Kemerdekaan No. 33 Jakarta Selatan, 102345</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
 
     </div>
 
