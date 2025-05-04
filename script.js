@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   loadComponent("header-container", "Header.html", setupMenu);
   loadComponent("footer-container", "Footer.html");
+  startProgress();
 });
 
 function loadComponent(containerId, file, callback) {
@@ -54,3 +55,20 @@ function showDivs(n) {
 setInterval(() => {
   plusDivs(1);
 }, 4000);
+
+function startProgress(){
+  const progresses = document.querySelectorAll(".progress");
+
+  progresses.forEach((progress) => {
+    let width = 1;
+    const interval = setInterval(() => {
+      if(width >=100){
+        clearInterval(interval)
+      }else{
+        progress.style.width = width + "%"
+        width++
+      }
+    }, 2);
+  })
+}
+
