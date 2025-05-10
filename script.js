@@ -56,15 +56,15 @@ setInterval(() => {
   plusDivs(1);
 }, 4000);
 
-function startProgress(){
+function startProgress() {
   const progresses = document.querySelectorAll(".progress");
 
   progresses.forEach((progress) => {
     let width = 1;
     const interval = setInterval(() => {
-      if(width >=100){
+      if (width >= 100) {
         clearInterval(interval)
-      }else{
+      } else {
         progress.style.width = width + "%"
         width++
       }
